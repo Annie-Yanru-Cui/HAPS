@@ -1,7 +1,7 @@
 # HAPS
 Installation locally
 
-Please download the compressed package here: 
+Please download the compressed package here: https://github.com/Annie-Yanru-Cui/HAPS/blob/master/HAPS_0.1.0.tar.gz
 
 On Windows system
 
@@ -21,9 +21,10 @@ c:\program files\R\R.3.x.x\bin\x64
 
 Run the following code in R
 
-install.packages('HAPS.tar.gz', repos = NULL, type='source')
+install.packages('HAPS_0.1.0.tar.gz', repos = NULL, type='source')
 
 On Linux and Mac systems
+
 Just run the following code in R
 
-install.packages('HAPS.tar.gz', repos = NULL, type='source')
+install.packages('HAPS_0.1.0.tar.gz', repos = NULL, type='source')
