@@ -48,7 +48,7 @@ haplo.GS(Strfile=NULL,Genefile1=system.file("examples/training.geno.txt.gz",pack
 haplo.CV.GS(Strfile=NULL,Genefile=system.file("examples/training.geno.txt.gz", package="HAPS"),Phefile = system.file("examples/training.phe.csv", package="HAPS"),Chrom ="all",max.merge=3,num.comp=3,nfold=10)
 ```
 # 3. parameter setting
-* **haplo.GWAS**
+### haplo.GWAS
 
  ***Strfile***: file name of the population structure.
              The first column of this file is the line, the other columns are the population structure data. If the file dose not exist, Strfile=***NULL***
@@ -61,7 +61,7 @@ haplo.CV.GS(Strfile=NULL,Genefile=system.file("examples/training.geno.txt.gz", p
 
 ***Chrom***: a number represents which chromsome is analyzed. 1 for the first chromosome; "all" for the whole chromosome
 
-***max.merge***: an integer. When the number of haplotypes is less than the ***max.merge***,then these haplotypes are combined into one type haplotype, ***default is 3***, 1 mean all the haplotype do not need to combined. the higher the number, the faster the computation speed.
+***max.merge***: an integer. When the number of haplotypes is less than the ***max.merge***, then these haplotypes are combined into one type haplotype, ***default is 3***, 1 mean all the haplotype do not need to combined. the higher the number, the faster the computation speed.
 ***This parameter depends on your population size, please adjusting the parameter to get the perform results***
 
 ***num.comp***: a number indicating how many components are selected as the fixed effects, ***default is 3***
