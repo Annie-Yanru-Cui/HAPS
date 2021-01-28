@@ -48,7 +48,7 @@ haplo.GS(Strfile=NULL,Genefile1=system.file("examples/training.geno.txt.gz",pack
 haplo.CV.GS(Strfile=NULL,Genefile=system.file("examples/training.geno.txt.gz", package="HAPS"),Phefile = system.file("examples/training.phe.csv", package="HAPS"),Chrom ="all",max.merge=3,num.comp=3,nfold=10)
 ```
 # 3. parameter setting
-### haplo.GWAS
+### 3.1 haplo.GWAS
 
  ***Strfile***: file name of the population structure.
              The first column of this file is the line, the other columns are the population structure data. If the file dose not exist, Strfile=***NULL***
@@ -70,7 +70,7 @@ haplo.CV.GS(Strfile=NULL,Genefile=system.file("examples/training.geno.txt.gz", p
  
 ***threshold***: a threshold value for significant tests, ***0.05/0.01/defind any number***
  
-* **haplo.GS**
+### 3.2 haplo.GS
 
 ***Strfile***: file name of the population structure
 The first column of this file is the line, the other columns are the population structure data. If the file dose not exist, Strfile=NULL
@@ -85,8 +85,7 @@ The first column of this file is the line, the other columns are the population 
 
 ***num.comp***: the same to the parameter in ***haplo.GWAS***
 
-
-* **haplo.CV.GS**
+### 3.3 haplo.CV.GS
 
 ***Strfile***: the file name of genotype data
 
