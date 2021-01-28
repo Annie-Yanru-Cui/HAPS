@@ -49,17 +49,26 @@ haplo.CV.GS(Strfile=NULL,Genefile=system.file("examples/training.geno.txt.gz", p
 ```
 # 3. parameter setting
 * **haplo.GWAS**
+
  **Strfile**: file name of the population structure.
              The first column of this file is the line, the other columns are the population structure data. If the file dose not exist, Strfile=**NULL**
-	**Manhattan**: a logical value ( TRUE/FALSE) whether output manhattan plots.}
-	**Genefile**: the file name of genotype data 
-	**Phefile**: the file name of phenotype data
-	**Chrom**: represents chromsome number. 1 for the first chromsome; "all" for the whole chromsome, 
-  **max.merge**: a number greater than 2. When the number of haplotypes minus the max.merge,then these haplotypes are combined, **default is 5**. 
-	              ***This parameter setting depends on your population size, please adjusting the parameter to get the perform results*** 
-  **num.comp**: a number indicating how many components were selected as the fixed effects,**default is 3**
-  **p.adjust.method**: method for adjust p value, **including "holm", "hochberg", "hommel", "bonferroni", "BH", "BY", "fdr", "none"**
- **threshold** a threshold value for significant tests, **0.05/0.01/defind any number**
+	     
+**Manhattan**: a logical value ( TRUE/FALSE) whether output manhattan plots
+
+**Genefile**: the file name of genotype data 
+
+**Phefile**: the file name of phenotype data
+
+**Chrom**: represents chromsome number. 1 for the first chromsome; "all" for the whole chromsome
+
+**max.merge**: a number greater than 2. When the number of haplotypes minus the max.merge,then these haplotypes are combined, **default is 5**. 
+	       ***This parameter setting depends on your population size, please adjusting the parameter to get the perform results*** 
+**num.comp**: a number indicating how many components were selected as the fixed effects,**default is 3**
+
+**p.adjust.method**: method for adjust p value, **including "holm", "hochberg", "hommel", "bonferroni", "BH", "BY", "fdr", "none"**
+ 
+**threshold** a threshold value for significant tests, **0.05/0.01/defind any number**
+ 
 * **haplo.GWAS**
 
 
