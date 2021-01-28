@@ -62,7 +62,8 @@ haplo.CV.GS(Strfile=NULL,Genefile=system.file("examples/training.geno.txt.gz", p
 **Chrom**: represents chromsome number. 1 for the first chromsome; "all" for the whole chromsome
 
 **max.merge**: a number greater than 2. When the number of haplotypes minus the max.merge,then these haplotypes are combined, **default is 5**. 
-	       ***This parameter setting depends on your population size, please adjusting the parameter to get the perform results*** 
+	      ##  ***This parameter setting depends on your population size, please adjusting the parameter to get the perform results*** 
+
 **num.comp**: a number indicating how many components were selected as the fixed effects,**default is 3**
 
 **p.adjust.method**: method for adjust p value, **including "holm", "hochberg", "hommel", "bonferroni", "BH", "BY", "fdr", "none"**
