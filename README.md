@@ -59,9 +59,9 @@ haplo.CV.GS(Strfile=NULL,Genefile=system.file("examples/training.geno.txt.gz", p
 
 ***Phefile***: the file name of phenotype data
 
-**Chrom**: a number represents which chromsome is analyzed. 1 for the first chromosome; "all" for the whole chromosome
+***Chrom***: a number represents which chromsome is analyzed. 1 for the first chromosome; "all" for the whole chromosome
 
-**max.merge**   an integer. When the number of haplotypes is less than the **max.merge**,then these haplotypes are combined into one type haplotype, **default is 3**, 1 mean all the haplotype do not need to combined. the higher the number, the faster the computation speed.
+***max.merge***: an integer. When the number of haplotypes is less than the **max.merge**,then these haplotypes are combined into one type haplotype, **default is 3**, 1 mean all the haplotype do not need to combined. the higher the number, the faster the computation speed.
 **This parameter depends on your population size, please adjusting the parameter to get the perform results**
 
 ***num.comp***: a number indicating how many components are selected as the fixed effects, **default is 3**
@@ -88,19 +88,19 @@ The first column of this file is the line, the other columns are the population 
 
 * **haplo.CV.GS**
 
-**Strfile**   the file name of genotype data
+***Strfile***: the file name of genotype data
 
-**Genefile**   the file name of genotype data
+***Genefile***: the file name of genotype data
 
-**Phefile**   the file name of phenotype data
+***Phefile***: the file name of phenotype data
 
-**Chrom**     the same to the parameter in **haplo.GWAS**
+***Chrom***: the same to the parameter in **haplo.GWAS**
 
-**max.merge**  the same to the  parameter in **haplo.GWAS**
+***max.merge***: the same to the  parameter in **haplo.GWAS**
 
-**num.comp**   the same to the parameter in **haplo.GWAS**
+***num.comp***: the same to the parameter in **haplo.GWAS**
 
-**nfold**   a number indicating how many folds were used to perform the cross validation
+***nfold***: a number indicating how many folds were used to perform the cross validation
 
 
 
