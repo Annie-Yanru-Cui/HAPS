@@ -50,26 +50,58 @@ haplo.CV.GS(Strfile=NULL,Genefile=system.file("examples/training.geno.txt.gz", p
 # 3. parameter setting
 * **haplo.GWAS**
 
- **Strfile**: file name of the population structure.
+ **Strfile**   file name of the population structure.
              The first column of this file is the line, the other columns are the population structure data. If the file dose not exist, Strfile=**NULL**
 	     
-**Manhattan**: a logical value ( TRUE/FALSE) whether output manhattan plots
+**Manhattan**   a logical value ( TRUE/FALSE) whether output manhattan plots
 
-**Genefile**: the file name of genotype data 
+**Genefile**   the file name of genotype data 
 
-**Phefile**: the file name of phenotype data
+**Phefile**   the file name of phenotype data
 
-**Chrom**: represents chromsome number. 1 for the first chromsome; "all" for the whole chromsome
+**Chrom**   a number represents which chromsome is analyzed. 1 for the first chromosome; "all" for the whole chromosome
+o
+**max.merge**   an integer. When the number of haplotypes is less than the **max.merge**,then these haplotypes are combined into one type haplotype, **default is 3**, 1 mean all the haplotype do not need to combined. the higher the number, the faster the computation speed.
+**This parameter depends on your population size, please adjusting the parameter to get the perform results**
 
-**max.merge**: a number greater than 2. When the number of haplotypes minus the max.merge,then these haplotypes are combined, **default is 5**. 
-### This parameter setting depends on your population size, please adjusting the parameter to get the perform results
+**num.comp**   a number indicating how many components are selected as the fixed effects,**default is 3**
 
-**num.comp**: a number indicating how many components were selected as the fixed effects,**default is 3**
-
-**p.adjust.method**: method for adjust p value, **including "holm", "hochberg", "hommel", "bonferroni", "BH", "BY", "fdr", "none"**
+**p.adjust.method**   method for adjust p value, **including "holm", "hochberg", "hommel", "bonferroni", "BH", "BY", "fdr", "none"**
  
-**threshold** a threshold value for significant tests, **0.05/0.01/defind any number**
+**threshold**   a threshold value for significant tests, **0.05/0.01/defind any number**
  
-* **haplo.GWAS**
+* **haplo.GS**
+
+**Strfile**   file name of the population structure
+The first column of this file is the line, the other columns are the population structure data. If the file dose not exist, Strfile=NULL
+
+**Genefile1**   the file name of genotype data for training population
+
+**Phefile1**   the file of phenotype data for training population
+
+**Genefile2**   the file name of genotype data for predicted population
+
+**max.merge**   the same to the parameter in **haplo.GWAS**
+
+**num.comp**    the same to the parameter in **haplo.GWAS**
+
+
+* **haplo.CV.GS**
+
+**Strfile**   the file name of genotype data
+
+**Genefile**   the file name of genotype data
+
+**Phefile**   the file name of phenotype data
+
+**Chrom**     the same to the parameter in **haplo.GWAS**
+
+**max.merge**  the same to the  parameter in **haplo.GWAS**
+
+**num.comp**   the same to the parameter in **haplo.GWAS**
+
+**nfold**   a number indicating how many folds were used to perform the cross validation
+
+
 
 
