@@ -50,10 +50,10 @@ haplo.CV.GS(Strfile=NULL,Genefile=system.file("examples/training.geno.txt.gz", p
 # 3. parameter setting
 * **haplo.GWAS**
 
- **Strfile**   file name of the population structure.
+ ***Strfile***:file name of the population structure.
              The first column of this file is the line, the other columns are the population structure data. If the file dose not exist, Strfile=**NULL**
 	     
-**Manhattan**   a logical value ( TRUE/FALSE) whether output manhattan plots
+***Manhattan***: a logical value ( TRUE/FALSE) whether output manhattan plots
 
 **Genefile**   the file name of genotype data 
 
