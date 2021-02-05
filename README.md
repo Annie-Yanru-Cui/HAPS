@@ -2,6 +2,7 @@
 # 1. Installation locally
 
 Please download the compressed R package here: [HAPS](https://github.com/Annie-Yanru-Cui/HAPS/blob/master/HAPS_0.1.0.tar.gz)
+Or download the compressed R package and readme file together here:[HAPS+Readme file](https://github.com/Annie-Yanru-Cui/HAPS)
 
 ## 1.1 On Windows system
 
